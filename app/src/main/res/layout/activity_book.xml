@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/default_margin"
+        android:paddingBottom="@dimen/double_margin"
+        >
+        <ImageView
+            android:id="@+id/detail_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="120dp"
+            android:minHeight="160dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/default_margin"
+            tools:src="@mipmap/ic_launcher"
+            />
+
+        <TextView
+            android:id="@+id/detail_main_title"
+            style="@style/header_field"
+            android:textSize="24sp"
+            tools:text="Title"
+            />
+        <TextView
+            android:id="@+id/detail_subtitle"
+            style="@style/header_field"
+            tools:text="Sub Title"
+            />
+        <TextView
+            android:id="@+id/detail_authors"
+            style="@style/header_field"
+            tools:text="Author"
+            />
+        <TextView
+            android:id="@+id/detail_price"
+            style="@style/header_field"
+            tools:text="Listing Price"
+            />
+        <TableLayout
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            >
+            <TableRow>
+                <TextView
+                    android:text="@string/product_details"
+                    android:textStyle="bold"
+                    android:padding="4dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/custom_table_row"
+                    android:text="@string/category"/>
+                <TextView
+                    android:id="@+id/detail_category"
+                    style="@style/custom_table_row"
+                    android:layout_weight="3"
+                    tools:text="Fiction"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/custom_table_row"
+                    android:text="@string/publisher"/>
+                <TextView
+                    android:id="@+id/detail_publisher"
+                    style="@style/custom_table_row"
+                    android:layout_weight="3"
+                    tools:text="Yen Sen"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/custom_table_row"
+                    android:text="@string/publish_date" />
+                <TextView
+                    android:id="@+id/detail_date"
+                    style="@style/custom_table_row"
+                    android:layout_weight="3"
+                    tools:text="Jan 01, 2000"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/custom_table_row"
+                    android:text="@string/pages" />
+                <TextView
+                    android:id="@+id/detail_pages"
+                    style="@style/custom_table_row"
+                    android:layout_weight="3"
+                    tools:text="100"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/custom_table_row"
+                    android:text="@string/isbn_10" />
+                <TextView
+                    android:id="@+id/detail_isbn10"
+                    style="@style/custom_table_row"
+                    android:layout_weight="3"
+                    tools:text="0000000000"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/custom_table_row"
+                    android:text="@string/isbn_13" />
+                <TextView
+                    android:id="@+id/detail_isbn13"
+                    style="@style/custom_table_row"
+                    android:layout_weight="3"
+                    tools:text="0000000000000"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/detail_description"
+                    style="@style/custom_table_row"
+                    tools:text="Description"
+                    />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

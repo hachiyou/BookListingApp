@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Book Listing App</string>
+
+    <string name="search_bar">Enter search term here.</string>
+
+    <string name="welcome_message">Welcome to\nmy app for\nlist of books.</string>
+
+    <!-- Text to display in the list when there are no books [CHAR LIMIT=NONE] -->
+    <string name="no_book">No books found.</string>
+
+    <!-- Text to display in the list when there are no network connection [CHAR LIMIT=NONE] -->
+    <string name="no_network">You are currently not connect to Internet.</string>
+
+    <!-- Text descriptor to display in the table to represent Product Details [CHAR LIMIT=15]-->
+    <string name="product_details">Product Details</string>
+    <!-- Text descriptor to display in the table to represent Category [CHAR LIMIT=15]-->
+    <string name="category">Category: </string>
+    <!-- Text descriptor to display in the table to represent Publisher [CHAR LIMIT=15]-->
+    <string name="publisher">Publisher: </string>
+    <!-- Text descriptor to display in the table to represent Publish Date [CHAR LIMIT=15]-->
+    <string name="publish_date">Date: </string>
+    <!-- Text descriptor to display in the table to represent Pages of Book [CHAR LIMIT=15]-->
+    <string name="pages">Pages: </string>
+    <!-- Text descriptor to display in the table to represent ISBN-10 of book [CHAR LIMIT=15]-->
+    <string name="isbn_10">ISBN 10: </string>
+    <!-- Text descriptor to display in the table to represent ISBN-13 of book [CHAR LIMIT=15]-->
+    <string name="isbn_13">ISBN 13: </string>
+
+</resources>
